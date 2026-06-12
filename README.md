@@ -66,9 +66,11 @@ del "C:\Users\<USERNAME>\AppData\Roaming\Antigravity IDE\keybindings.json"
 
 Jalankan Command Prompt sebagai Administrator:
 
+```
+cd /d X:\Programs\Setting-keymaps
+```
 ```cmd
-mklink "C:\Users\<USERNAME>\AppData\Roaming\Antigravity IDE\keybindings.json" ^
-       "X:\Programs\Setting-keymaps\keybindings.json"
+mklink "%APPDATA%\Code\User\keybindings.json" "X:\Programs\Setting-keymaps\keybindings.json"
 ```
 
 ---
